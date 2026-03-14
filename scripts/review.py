@@ -35,10 +35,8 @@ def main():
        model="gemini-3-flash-preview",
        contents=prompt
     )
-    print("code review feedback:")
-    print(response.text)
-#     html = response.text   
-#     send_email(html) 
+    html = response.text   
+    send_email(html) 
     
 main()
     
