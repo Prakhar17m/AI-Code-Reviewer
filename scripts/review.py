@@ -22,7 +22,7 @@ def send_email(html_content):
    msg.add_alternative(html_content, subtype='html')
    
    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-      smtp.login("ankur77720prajapati@gmail.com", os.getenv("MAIL_APP_PASSWORD"))
+      smtp.login("prakharmehrotra44@gmail.com", os.getenv("MAIL_APP_PASSWORD"))
       smtp.send_message(msg)
       
    return "Email sent successfully"
