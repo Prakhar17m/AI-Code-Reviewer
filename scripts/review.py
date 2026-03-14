@@ -1,4 +1,4 @@
-# import subprocess
+import subprocess
 # from urllib import response
 # from google import genai
 # import os
@@ -6,11 +6,11 @@
 # from email.message import EmailMessage
 
 
-# def getDiff():
-#    diff = subprocess.check_output(["git", "show"], text=True)
-#    return diff
+def getDiff():
+   diff = subprocess.check_output(["git", "show"], text=True)
+   return diff
 
-
+print(getDiff())
 
 # client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
 
@@ -42,5 +42,3 @@
     
 # main()
     
-    
-print("code review executed successfully!")
