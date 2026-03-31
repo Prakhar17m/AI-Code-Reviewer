@@ -9,7 +9,7 @@ def getDiff():
    diff = subprocess.run(["git", "show"], text=True)
    return diff
 print(getDiff())
-# client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
+client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
 
 
 # def send_email(html_content):
